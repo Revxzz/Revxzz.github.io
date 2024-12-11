@@ -1,105 +1,814 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, user-scalable=no" />
-<header>
-<style>
-body {
-	background: #243447;
-	color: #CDCDCD;
-}
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Akhir Tahun - Jualan VPS & Layanan TikTok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-li {
-  color: white; /* bullet color */
-}
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-h2 {
-	line-height: 1.5;
-	font-family: Comic Sans MS;
-	font-weight: bold;
-	text-align: center;
-	text-color: WHITE;
-}
+        a {
+            color: #0078d7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-#container {
-	/*stitching*/
-	outline: 1px dashed #FFffff;
-	outline-offset: -5px;
-	
-	background-color: #5F5F5F;
-	height: 50px;
-	width: 100%;
-	
-	/*shadow*/
-	-webkit-box-shadow: 0px 2px 2px #000;
-	-moz-box-shadow: 0px 2px 2px #000;
-	box-shadow: 0px 2px 2px #000;
-}
-</style>
-           <center><img src="https://telegra.ph/file/6339ff92c912bc39555de.jpg"width="200"height="200"></center></body>
-            
-             <center><font face="Forte" size="9" style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px">TRANKSAKSI</font></center>
-               
-               <center><font style="color:#ffffff;text-shadow: 0px 0px 10px blue" size="4">PAYMENT REVXZ</font></center>
-               
-           <center><font color="yellow" size="6">- - - - - - - - - - - - - - - - -  </font></center>
-            
-             <center>
-             <font style="color:red;text-shadow:#000 0px 0px 3px">CATATAN <font style="color:white;text-shadow:#000 0px 0px 3px">:<br>
-             <div class="greets">
-<table align=center border="0">
-<tr>
-<td width=100% id=greetz>
-<marquee behavior="scroll" direction="left" scrollamount="4" scrolldelay="55" width="100%">
-<font size="3px" style="font-family: Iceland, sans-serif;color:white;text-shadow: 0 0 3px red, 0px 0px 5px red" >
-<b>JIKA SUDAH MELAKUKAN TRX MOHON KIRIM BUKTI</b></font>
-</marquee>
-</td>
-</table></div> 
-             
-          <center><font color="yellow" size="6"> - - - - - - - - - - - - - - - - - </font></center>
-          
-         
-     
-    </p>
-    <hr/>
- <img class="img-fluid" style="max-height: 30px" src="https://telegra.ph/file/c40e722ccd7e737c54d03.jpg"> 
-</p>
-<point style = "font-weight: bold;"> Gopay : - </br>
-</p>
-    <hr/>
-<img class="img-fluid" style="max-height: 30px" src="https://statis-images.s3.ap-southeast-1.amazonaws.com/global/payment/V2/IDR/epayment/dana.webp">
-</p>
-<point style = "font-weight: bold;"> Dana : 6282138079249 </br>
-</p>
-    <hr/>
-    <img class="img-fluid" style="max-height: 30px" src="https://telegra.ph/file/36bfcc1a9052b3a50126c.jpg">
-    </p>
-<point style = "font-weight: bold;"> Ovo : - </br>
-</p>
-<hr/>
-<img class="img-fluid" style="max-height: 30px" src="https://telegra.ph/file/7d1ff0c7e31fb678b5a56.jpg">
-    </p>
-<point style = "font-weight: bold;"> BRI : - </br>
-<p>
-<point style = "font-weight: bold;"> A/N Revxz </br>
-</p>
-<hr/>
-<img class="img-fluid" style="max-height: 30px" src="https://telegra.ph/file/268011269a646957766a8.jpg">
-    </p>
-<point style = "font-weight: bold;"> BNI : - </br>
-<p>
-<point style = "font-weight: bold;"> A/N Revxz </br>
-</p>
-<hr/>
-  <h2>SCAN QR KLICK DI BAWAH</h2>
-    <hr/>
-    <p> 
-</font>
-<h3><font size="3"><a href="https://files.catbox.moe/o6sbl9.jpg"><font color="red">QRIS ALL PAYMENT</font>
-</h3>
-    <hr/>
- <h3><font size="3"><a href="https://wa.me/6282138079249"><font color="red">OWNER</font>
-</h3>
-    <hr/>
+        a:hover {
+            color: #005fa3;
+        }
+
+        /* Header */
+        header {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 120, 215, 0.6);
+            z-index: 1;
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        header .cta-button {
+            padding: 15px 30px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        header .cta-button:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        nav.scrolled {
+            background: rgba(0, 120, 215, 0.9);
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Paket VPS */
+        .vps {
+            text-align: center;
+        }
+
+        .vps h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .vps .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff5722;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0078d7;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card button:hover {
+            background: #005fa3;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 2000;
+        }
+
+        .modal.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-content h3 {
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .modal-content ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .modal-content .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 1em;
+            line-height: 1;
+        }
+
+        /* Promo Section */
+        .promo {
+            background: #fff3e0;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .promo h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+
+        .promo .promo-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .promo-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .promo-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .promo-item p {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #0078d7;
+        }
+
+        /* TikTok Section */
+        .tiktok {
+            text-align: center;
+        }
+
+        .tiktok h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .tiktok .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+            color: #ff5722;
+        }
+
+        .service ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service ul li {
+            text-align: left;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .service ul li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Join Section */
+        .exclusive {
+            background: #e0f7fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .exclusive h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .exclusive ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .exclusive ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .exclusive ul li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .exclusive p {
+            font-size: 1.2em;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        /* Testimoni Section */
+        .testimoni {
+            text-align: center;
+        }
+
+        .testimoni h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0078d7;
+        }
+
+        .testimoni a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff5722;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .testimoni a:hover {
+            background: #e64a19;
+        }
+
+        /* Hubungi Section */
+        .hubungi {
+            background: #fff3e0;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .hubungi h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+
+        .hubungi ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hubungi ul li {
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background: #0078d7;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer .socials {
+            margin-bottom: 15px;
+        }
+
+        footer .socials a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                background: rgba(0, 120, 215, 0.9);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+                color: white;
+                font-size: 1.5em;
+            }
+
+            .vps .cards, .promo .promo-items, .tiktok .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="#vps">Paket VPS</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#tiktok">TikTok</a></li>
+            <li><a href="#exclusive">Join</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#hubungi">Hubungi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <div class="content">
+            <h1>PROMO AKHIR TAHUN VPS DIGITAL OCEAN!</h1>
+            <p>Maksimalkan performa Anda dengan harga spesial!</p>
+            <button class="cta-button" onclick="scrollToSection('vps')">Lihat Paket</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Paket VPS Section -->
+        <section id="vps" class="vps">
+            <h2>Paket VPS</h2>
+            <div class="cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>Starter</h3>
+                    <p>1GB RAM, 1 Core</p>
+                    <p class="price">Rp15.000/bulan</p>
+                    <button onclick="openModal('kelebihan')">Kelebihan</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>Pro</h3>
+                    <p>2GB RAM, 1 Core</p>
+                    <p class="price">Rp25.000/bulan</p>
+                    <button onclick="openModal('kelebihan')">Kelebihan</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <h3>Business</h3>
+                    <p>4GB RAM, 2 Core</p>
+                    <p class="price">Rp35.000/bulan</p>
+                    <button onclick="openModal('kelebihan')">Kelebihan</button>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <h3>Enterprise</h3>
+                    <p>8GB RAM, 4 Core</p>
+                    <p class="price">Rp45.000/bulan</p>
+                    <button onclick="openModal('kelebihan')">Kelebihan</button>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <h3>Premium</h3>
+                    <p>16GB RAM, 4 Core</p>
+                    <p class="price">Rp60.000/bulan</p>
+                    <button onclick="openModal('kelebihan')">Kelebihan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Section -->
+        <section id="promo" class="promo">
+            <h2>PROMO AKHIR TAHUN!</h2>
+            <div class="promo-items">
+                <div class="promo-item">
+                    <p>Reseller Panel</p>
+                    <p>Rp5.000 (50% off)</p>
+                </div>
+                <div class="promo-item">
+                    <p>Admin Panel</p>
+                    <p>Rp10.000 (33% off)</p>
+                </div>
+                <div class="promo-item">
+                    <p>Partner Panel</p>
+                    <p>Rp15.000 (25% off)</p>
+                </div>
+                <div class="promo-item">
+                    <p>Owner Panel</p>
+                    <p>Rp20.000 (20% off)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TikTok Section -->
+        <section id="tiktok" class="tiktok">
+            <h2>✨ BOOST AKUN TIKTOK-MU SEKARANG!</h2>
+            <div class="services">
+                <!-- Followers -->
+                <div class="service">
+                    <h3>📈 SUNTIK FOLLOWERS TIKTOK</h3>
+                    <ul>
+                        <li>400 Followers = 12k</li>
+                        <li>500 Followers = 15k</li>
+                        <li>1000 Followers = 30k</li>
+                        <li>Kelipatan cuma 3k/100 Followers!</li>
+                    </ul>
+                </div>
+                <!-- Likes -->
+                <div class="service">
+                    <h3>❤️ SUNTIK LIKE TIKTOK</h3>
+                    <ul>
+                        <li>100 Likes = 1k</li>
+                        <li>500 Likes = 3k</li>
+                        <li>1000 Likes = 5,5k</li>
+                        <li>Kelipatan hanya 500p/100 Likes!</li>
+                    </ul>
+                </div>
+                <!-- Views -->
+                <div class="service">
+                    <h3>👀 SUNTIK VIEW TIKTOK</h3>
+                    <ul>
+                        <li>1000 Views = 500</li>
+                        <li>5000 Views = 2,5k</li>
+                        <li>10.000 Views = 5k</li>
+                        <li>Kelipatan cuma 500p/1000 Views!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section id="exclusive" class="exclusive">
+            <h2>🌟 MAU UNTUNG LEBIH BESAR? JOIN MURNOK & MURSUN!</h2>
+            <ul>
+                <li>Bisa jualan Nokos & Suntik sendiri kapan saja</li>
+                <li>Gratis update sumber Nokos & Suntik SELAMANYA</li>
+                <li>Full bimbingan sampai paham & lancar</li>
+                <li>Modal Kecil, Balik Modal Cepat</li>
+            </ul>
+            <p>🔑 Cuma bawa 10k, langsung JOIN!</p>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section id="testimoni" class="testimoni">
+            <h2>❤️ Testimoni</h2>
+            <p><a href="https://whatsapp.com/channel/0029VakG9F547XeJe9EU1X13" target="_blank">Lihat Testimoni Kami</a></p>
+        </section>
+
+        <!-- Hubungi Section -->
+        <section id="hubungi" class="hubungi">
+            <h2>📞 Hubungi Kami</h2>
+            <ul>
+                <li>WhatsApp: (+62) 821-3807-9249</li>
+                <li>Contact Person: Revxz</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="WhatsApp"></a>
+        </div>
+        <p>🔥 ALL TRX ON - LAYANAN TERPERCAYA 🔥</p>
+        <p>© 2024 Jasa Suntik & VPS - Semua Hak Dilindungi</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="kelebihan">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h3>Kelebihan Kami</h3>
+            <ul>
+                <li>Instalasi panel gratis</li>
+                <li>Domain gratis</li>
+                <li>Garansi 15 hari</li>
+                <li>Dukungan 24/7</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Toggle Navigation Menu on Mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Scroll to Section
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            window.scrollTo({
+                top: section.offsetTop - 70,
+                behavior: 'smooth'
+            });
+        }
+
+        // Open Modal
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.add('active');
+        }
+
+        // Close Modal
+        function closeModal() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => modal.classList.remove('active'));
+        }
+
+        // Close Modal when clicking outside the content
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+
+        // Scroll Animation
+        const sections = document.querySelectorAll('section');
+        const options = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Change Nav Background on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 50){
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
 </body>
 </html>
